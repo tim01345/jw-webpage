@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimeo Clone</title>
+    <link rel="stylesheet" href="vimeo-clone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navigation">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <svg width="58" height="20" viewBox="0 0 58 20" fill="none">
+                        <path d="M14.4 0L12.8 6.4L11.2 0H8.8L7.2 6.4L5.6 0H3.2L6.4 12.8H8.8L10.4 6.4L12 12.8H14.4L17.6 0H14.4Z" fill="#1AB7EA"/>
+                        <path d="M25.6 0C23.2 0 21.6 1.6 21.6 4V8.8C21.6 11.2 23.2 12.8 25.6 12.8C28 12.8 29.6 11.2 29.6 8.8V4C29.6 1.6 28 0 25.6 0ZM27.2 8.8C27.2 9.6 26.8 10.4 25.6 10.4C24.4 10.4 24 9.6 24 8.8V4C24 3.2 24.4 2.4 25.6 2.4C26.8 2.4 27.2 3.2 27.2 4V8.8Z" fill="#1AB7EA"/>
+                        <path d="M38.4 0H36V12.8H38.4V8L41.6 12.8H44.8L40.8 7.2L44.8 0H41.6L38.4 5.6V0Z" fill="#1AB7EA"/>
+                        <path d="M53.6 0H51.2V12.8H53.6V8L56.8 12.8H60L56 7.2L60 0H56.8L53.6 5.6V0Z" fill="#1AB7EA"/>
+                    </svg>
+                </div>
+                <nav class="nav-links">
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-trigger">
+                            Products
+                            <svg width="12" height="8" viewBox="0 0 12 8">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Video Player</a>
+                            <a href="#" class="dropdown-item">Live Streaming</a>
+                            <a href="#" class="dropdown-item">OTT Platform</a>
+                            <a href="#" class="dropdown-item">API</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-trigger">
+                            Solutions
+                            <svg width="12" height="8" viewBox="0 0 12 8">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Enterprise</a>
+                            <a href="#" class="dropdown-item">Small Business</a>
+                            <a href="#" class="dropdown-item">Creators</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-link">Resources</a>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <button class="btn-secondary">Log in</button>
+                <button class="btn-primary">Join</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Make, manage and share videos that work for your business</h1>
+            <p class="hero-subtitle">From live streaming to video hosting, Vimeo has the tools you need to create and share amazing video content.</p>
+            <div class="hero-actions">
+                <button class="btn-primary-large">Start for free</button>
+                <button class="btn-secondary-large">Watch demo</button>
+            </div>
+        </div>
+        <div class="hero-video">
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                        <circle cx="36" cy="36" r="36" fill="rgba(26, 183, 234, 0.1)"/>
+                        <path d="M48 36L28 48V24L48 36Z" fill="#1AB7EA"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#F0F9FF"/>
+                            <path d="M16 18H32V30H16V18Z" stroke="#1AB7EA" stroke-width="2" fill="none"/>
+                            <path d="M20 22L28 26L20 30V22Z" fill="#1AB7EA"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Video Player</h3>
+                    <p class="feature-description">Customizable, ad-free video player that works everywhere</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#FEF2F2"/>
+                            <circle cx="24" cy="20" r="4" stroke="#EF4444" stroke-width="2" fill="none"/>
+                            <path d="M16 28H32" stroke="#EF4444" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Live Streaming</h3>
+                    <p class="feature-description">Broadcast live to audiences around the world</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#F0FDF4"/>
+                            <rect x="16" y="16" width="16" height="16" rx="2" stroke="#22C55E" stroke-width="2" fill="none"/>
+                            <path d="M20 20H28V28H20V20Z" fill="#22C55E" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Video Management</h3>
+                    <p class="feature-description">Organize, share and track your video content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Trusted by businesses worldwide</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Vimeo has transformed how we share content with our global team. The video quality is outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-title">Marketing Director, TechCorp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The live streaming capabilities have been game-changing for our virtual events and training sessions."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <div class="author-name">Michael Chen</div>
+                            <div class="author-title">CEO, EventPro</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The customizable player and analytics help us understand our audience better than ever before."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <div class="author-name">Emily Rodriguez</div>
+                            <div class="author-title">Content Manager, CreativeStudio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Video Player</a></li>
+                        <li><a href="#">Live Streaming</a></li>
+                        <li><a href="#">OTT Platform</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Small Business</a></li>
+                        <li><a href="#">Creators</a></li>
+                        <li><a href="#">Education</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Developers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <svg width="58" height="20" viewBox="0 0 58 20" fill="none">
+                        <path d="M14.4 0L12.8 6.4L11.2 0H8.8L7.2 6.4L5.6 0H3.2L6.4 12.8H8.8L10.4 6.4L12 12.8H14.4L17.6 0H14.4Z" fill="#666"/>
+                        <path d="M25.6 0C23.2 0 21.6 1.6 21.6 4V8.8C21.6 11.2 23.2 12.8 25.6 12.8C28 12.8 29.6 11.2 29.6 8.8V4C29.6 1.6 28 0 25.6 0ZM27.2 8.8C27.2 9.6 26.8 10.4 25.6 10.4C24.4 10.4 24 9.6 24 8.8V4C24 3.2 24.4 2.4 25.6 2.4C26.8 2.4 27.2 3.2 27.2 4V8.8Z" fill="#666"/>
+                        <path d="M38.4 0H36V12.8H38.4V8L41.6 12.8H44.8L40.8 7.2L44.8 0H41.6L38.4 5.6V0Z" fill="#666"/>
+                        <path d="M53.6 0H51.2V12.8H53.6V8L56.8 12.8H60L56 7.2L60 0H56.8L53.6 5.6V0Z" fill="#666"/>
+                    </svg>
+                </div>
+                <p class="footer-copyright">© 2024 Vimeo Clone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
